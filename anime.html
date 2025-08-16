@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр аниме | VexeraDubbing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">← На главную</a>
+        <h1 id="anime-title"></h1>
+    </header>
+
+    <main>
+        <section class="video-player">
+            <iframe id="vk-player" src="" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section class="episodes">
+            <h2>Серии</h2>
+            <div id="episodes-list" class="grid-container"></div>
+        </section>
+
+        <section class="comments">
+            <h2>Комментарии</h2>
+            <div id="comments-container"></div>
+            <textarea id="comment-input" placeholder="Ваш комментарий..."></textarea>
+            <button onclick="postComment()">Отправить</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="comments.js"></script>
+</body>
+</html>
