@@ -1,5 +1,6 @@
 // Используем GitHub Issues для комментариев
-const REPO = 'VexeraDubbing/anime-site'; // Замените на ваш репозиторий
+const REPO = 'VexeraDubbing/VexeraDubbingTeam
+    '; // Замените на ваш репозиторий
 
 function loadComments() {
     fetch(`https://api.github.com/repos/${REPO}/issues`)
@@ -26,7 +27,7 @@ function postComment() {
     fetch(`https://api.github.com/repos/${REPO}/issues`, {
         method: 'POST',
         headers: {
-            'Authorization': 'token YOUR_GITHUB_TOKEN', // Замените на свой токен
+            'Authorization': 'token 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', // Замените на свой токен
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ title: 'Новый комментарий', body: commentText })
